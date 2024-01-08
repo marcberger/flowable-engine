@@ -4,11 +4,11 @@
 
   <name>Flowable DB Clean</name>
   <description>Flowable DB Clean</description>
-  <groupId>org.flowable</groupId>
+  <groupId>fr.insee.sndil.flowable</groupId>
   <artifactId>flowable-dbclean</artifactId>
 
   <packaging>pom</packaging>
-  <version>7.1.0-SNAPSHOT</version>
+  <version>7.1.0-insee1</version>
 
   <dependencies>
     <dependency>
@@ -42,7 +42,7 @@
       <version>8.4-701.jdbc4</version>
     </dependency>
     <dependency>
-      <groupId>org.flowable</groupId>
+      <groupId>fr.insee.sndil.flowable</groupId>
       <artifactId>flowable-engine</artifactId>
       <version>${version}</version>
     </dependency>

@@ -7,36 +7,36 @@
   <artifactId>flowable5-cxf-test</artifactId>
 
   <parent>
-    <groupId>org.flowable</groupId>
+    <groupId>fr.insee.sndil.flowable</groupId>
     <artifactId>flowable-root</artifactId>
     <relativePath>../..</relativePath>
-    <version>7.1.0-SNAPSHOT</version>
+    <version>7.1.0-insee1</version>
   </parent>
 
   <dependencies>
     <dependency>
-      <groupId>org.flowable</groupId>
+      <groupId>fr.insee.sndil.flowable</groupId>
       <artifactId>flowable-engine</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.flowable</groupId>
+      <groupId>fr.insee.sndil.flowable</groupId>
       <artifactId>flowable5-engine</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.flowable</groupId>
+      <groupId>fr.insee.sndil.flowable</groupId>
       <artifactId>flowable5-test</artifactId>
-      <version>7.1.0-SNAPSHOT</version>
+      <version>7.1.0-insee1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.flowable</groupId>
+      <groupId>fr.insee.sndil.flowable</groupId>
       <artifactId>flowable-cxf</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-	  <groupId>org.flowable</groupId>
+	  <groupId>fr.insee.sndil.flowable</groupId>
 	  <artifactId>flowable5-spring-compatibility</artifactId>
 	  <scope>provided</scope>
 	</dependency>

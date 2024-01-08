@@ -4,14 +4,30 @@
 
 	<name>Flowable</name>
 	<description>BPM and workflow engine</description>
-	<groupId>org.flowable</groupId>
+	<groupId>fr.insee.sndil.flowable</groupId>
 	<artifactId>flowable-root</artifactId>
 
 	<packaging>pom</packaging>
-	<version>7.1.0-SNAPSHOT</version>
+	<version>7.1.0-insee1</version>
+
+	<!-- to directly upload to nexus the snapshots with deploy goal-->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>nexus-snapshot</name>
+			<url>https://nexus.insee.fr/repository/depot-local-snapshot/</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+		<repository>
+			<id>nexus</id>
+			<name>nexus-release</name>
+			<url>https://nexus.insee.fr/repository/depot-local/</url>
+		</repository>
+	</distributionManagement>
+
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<distributionManagementSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</distributionManagementSnapshotsUrl>
 		<jdk.version>17</jdk.version>
 		<!-- When updating one spring version, make sure that all of them are updated to their latest compatible versions -->
 		<spring.boot.version>3.1.3</spring.boot.version>
@@ -85,7 +101,7 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.flowable</groupId>
+				<groupId>fr.insee.sndil.flowable</groupId>
 				<artifactId>flowable-bom</artifactId>
 				<version>${project.version}</version>
 				<type>pom</type>
@@ -1323,16 +1339,4 @@
 		<connection>scm:git:git@github.com:flowable/flowable-engine.git</connection>
 		<developerConnection>scm:git:git@github.com:flowable/flowable-engine.git</developerConnection>
 	</scm>
-	<distributionManagement>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>${distributionManagementSnapshotsUrl}</url>
-		</snapshotRepository>
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
 </project>
